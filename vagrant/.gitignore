@@ -1,0 +1,5 @@
+.ansible-retry
+.ssh-config
+.vagrant
+ansible.cfg
+hosts

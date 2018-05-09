@@ -1,0 +1,5 @@
+---
+# Roles specific to Vagrant testing
+
+- name: geerlingguy.postgresql
+  version: 1.4.1

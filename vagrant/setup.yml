@@ -1,0 +1,25 @@
+---
+- import_playbook: ../setup.yml
+
+- name: Setup Vagrant
+  hosts: all
+
+  roles:
+  - { name: geerlingguy.postgresql,
+      become: true,
+      postgresql_databases: [
+        { name: hyrax-demo_development }
+      ],
+      postgresql_users: [
+        { name: hyrax }
+        # can we use appusername here? not likely
+      ],
+    }
+
+  pre_tasks:
+    - name: Update geerlingguy.postgresql for Bionic Beaver (Ubuntu 18)
+      copy:
+        src: Ubuntu-18.yml
+        dest: roles/geerlingguy.postgresql/vars/Ubuntu-18.yml
+      connection: local
+      run_once: true

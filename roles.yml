@@ -1,0 +1,20 @@
+---
+# Roles for hyrax-demo deployments
+
+- name: carlosbuenosvinos.ansistrano-deploy
+  version: 2.9.0
+
+- name: carlosbuenosvinos.ansistrano-rollback
+  version: 2.0.1
+
+- name: ucsdlib.fits
+  version: 1.2.0
+
+- name: ucsdlib.libreoffice
+  version: 1.1.0
+
+- name: ucsdlib.redis
+  version: 1.1.1
+
+- name: zzet.rbenv
+  version: 3.4.0

@@ -4,5 +4,8 @@ retry/
 *.log
 *.log.??
 
+# Ignore installed roles
+roles/
+
 # Vault password needs to stay out of the repo
 .vaultpassword
