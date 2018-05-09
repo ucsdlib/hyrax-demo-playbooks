@@ -1,0 +1,8 @@
+# Ignore all the retry files and logs that may crop up
+retry/
+*.retry
+*.log
+*.log.??
+
+# Vault password needs to stay out of the repo
+.vaultpassword
